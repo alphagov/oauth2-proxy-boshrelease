@@ -16,5 +16,4 @@ fi
 # Copy Go Programming Language package
 echo "Copying Go Programming Language..."
 mkdir -p ${BOSH_INSTALL_TARGET}/bin
-mkdir -p ${BOSH_INSTALL_TARGET}/go
-cp -a ${BOSH_COMPILE_TARGET}/go/* ${BOSH_INSTALL_TARGET}/go
+cp -a ${BOSH_COMPILE_TARGET}/go/* ${BOSH_INSTALL_TARGET}

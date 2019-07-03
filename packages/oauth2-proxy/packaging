@@ -5,10 +5,10 @@ mkdir -p ${BOSH_INSTALL_TARGET}/src
 mkdir -p ${BOSH_INSTALL_TARGET}/bin
 cp -a . ${BOSH_INSTALL_TARGET}/src
 
-#source /var/vcap/packages/golang-1.10-linux/bosh/compile.env
 export GOPATH=$BOSH_INSTALL_TARGET
 
 export PATH=$PATH:$(pwd)
+export PATH=$PATH:$GOPATH
 export INSTALL_DIRECTORY=$(pwd)
 curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 

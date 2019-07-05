@@ -17,7 +17,7 @@ curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 apt-get update
 apt-get install -y git
 
-PACKAGE_NAME=github.com/bitly/oauth2_proxy
+PACKAGE_NAME=github.com/pusher/oauth2_proxy
 
 export GOPATH=${BOSH_INSTALL_TARGET}:${BOSH_INSTALL_TARGET}/src/${PACKAGE_NAME}
 
